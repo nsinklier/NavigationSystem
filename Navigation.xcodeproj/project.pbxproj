@@ -10,6 +10,12 @@
 		B1577A3325057EF1004A5C61 /* Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1577A2925057EF1004A5C61 /* Navigation.framework */; };
 		B1577A3825057EF1004A5C61 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A3725057EF1004A5C61 /* NavigationTests.swift */; };
 		B1577A3A25057EF1004A5C61 /* Navigation.h in Headers */ = {isa = PBXBuildFile; fileRef = B1577A2C25057EF1004A5C61 /* Navigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1577A4425058B27004A5C61 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A4325058B27004A5C61 /* Navigator.swift */; };
+		B1577A4725059199004A5C61 /* DestinationRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A4625059199004A5C61 /* DestinationRegistrar.swift */; };
+		B1577A492505E79F004A5C61 /* DestinationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A482505E79F004A5C61 /* DestinationDetails.swift */; };
+		B1577A4C2505F797004A5C61 /* NavigationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A4B2505F796004A5C61 /* NavigationUtils.swift */; };
+		B1577A4F25060C4F004A5C61 /* DynamicDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A4E25060C4F004A5C61 /* DynamicDestination.swift */; };
+		B1577A5125060D26004A5C61 /* DestinationViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1577A5025060D26004A5C61 /* DestinationViewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		B1577A3225057EF1004A5C61 /* NavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1577A3725057EF1004A5C61 /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		B1577A3925057EF1004A5C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1577A4325058B27004A5C61 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		B1577A4625059199004A5C61 /* DestinationRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationRegistrar.swift; sourceTree = "<group>"; };
+		B1577A482505E79F004A5C61 /* DestinationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetails.swift; sourceTree = "<group>"; };
+		B1577A4B2505F796004A5C61 /* NavigationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtils.swift; sourceTree = "<group>"; };
+		B1577A4E25060C4F004A5C61 /* DynamicDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDestination.swift; sourceTree = "<group>"; };
+		B1577A5025060D26004A5C61 /* DestinationViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,9 @@
 		B1577A2B25057EF1004A5C61 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				B1577A4D25060C0C004A5C61 /* ConsumerProtocols */,
+				B1577A452505914F004A5C61 /* Public */,
+				B1577A4A2505F73A004A5C61 /* Utils */,
 				B1577A2C25057EF1004A5C61 /* Navigation.h */,
 				B1577A2D25057EF1004A5C61 /* Info.plist */,
 			);
@@ -84,6 +99,33 @@
 				B1577A3925057EF1004A5C61 /* Info.plist */,
 			);
 			path = NavigationTests;
+			sourceTree = "<group>";
+		};
+		B1577A452505914F004A5C61 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				B1577A4325058B27004A5C61 /* Navigator.swift */,
+				B1577A4625059199004A5C61 /* DestinationRegistrar.swift */,
+				B1577A482505E79F004A5C61 /* DestinationDetails.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		B1577A4A2505F73A004A5C61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1577A4B2505F796004A5C61 /* NavigationUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1577A4D25060C0C004A5C61 /* ConsumerProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1577A4E25060C4F004A5C61 /* DynamicDestination.swift */,
+				B1577A5025060D26004A5C61 /* DestinationViewProvider.swift */,
+			);
+			path = ConsumerProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +190,7 @@
 				TargetAttributes = {
 					B1577A2825057EF1004A5C61 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					B1577A3125057EF1004A5C61 = {
 						CreatedOnToolsVersion = 11.7;
@@ -195,6 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1577A492505E79F004A5C61 /* DestinationDetails.swift in Sources */,
+				B1577A4C2505F797004A5C61 /* NavigationUtils.swift in Sources */,
+				B1577A4725059199004A5C61 /* DestinationRegistrar.swift in Sources */,
+				B1577A4425058B27004A5C61 /* Navigator.swift in Sources */,
+				B1577A5125060D26004A5C61 /* DestinationViewProvider.swift in Sources */,
+				B1577A4F25060C4F004A5C61 /* DynamicDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +389,7 @@
 		B1577A3E25057EF1004A5C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ACNDGP2FTQ;
@@ -356,6 +406,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.norpswizzler.Navigation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +416,7 @@
 		B1577A3F25057EF1004A5C61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ACNDGP2FTQ;
@@ -380,6 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.norpswizzler.Navigation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +442,7 @@
 		B1577A4125057EF1004A5C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACNDGP2FTQ;
 				INFOPLIST_FILE = NavigationTests/Info.plist;
@@ -406,6 +461,7 @@
 		B1577A4225057EF1004A5C61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACNDGP2FTQ;
 				INFOPLIST_FILE = NavigationTests/Info.plist;
